@@ -1,2 +1,3 @@
 # spacebar
-Subdomain for The Spacebar
+
+This repository contains configuration files for [The Spacebar](https://www.spacebar.news/).
