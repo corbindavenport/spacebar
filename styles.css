@@ -1,3 +1,90 @@
-.gh-navigation-logo {
-  border: 1px solid red;
+/* Show Subscribe button on all screen sizes */
+.spacebar-subscribe-btn {
+  background-color: #2c3351;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' class='bi bi-envelope' viewBox='0 0 16 16'%3E%3Cpath d='M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 3.5rem;
+  background-position-x: 2.5rem;
+  background-position-y: 0.6rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 16px 0px;
+  z-index: 3999998;
+  position: fixed;
+  bottom: 40px;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 40px);
+  right: 30px;
+  right: calc(env(safe-area-inset-right, 0px) + 30px);
+  align-items: normal;
+  font-size: 1.8rem;
+  border-radius: 100px;
+  color: var(--color-white);
+  cursor: pointer;
+  line-height: 1;
+  padding-top: 0.8em;
+  padding-right: 1.4em;
+  padding-bottom: 0.8em;
+  padding-left: 4em;
+  font-weight: 600;
+  letter-spacing: -.004em;
+  opacity: 1 !important;
+}
+@media (max-width: 767px) {
+  .spacebar-subscribe-btn {
+    border-radius: 20px 0px 0px 20px;
+    right: 0px;
+    right: env(safe-area-inset-right, 0px);
+    padding-right: 1em;
+    padding-right: calc(env(safe-area-inset-right, 0px) + 1em);
+  }
+  body:has(#adhesion_mobile_wrapper) .spacebar-subscribe-btn {
+    bottom: initial !important;
+    top: 10px !important;
+  }
+  body:has(#adhesion_mobile_wrapper) #gh-navigation {
+    z-index: 3999999;
+    box-shadow: 0px 20px 0px 0px var(--background-color);
+  }
+}
+/* Fix anchor ads overlapping Ghost popups */
+#ghost-portal-root:first-child {
+  z-index: 2147483536 !important;
+}
+/* Theme customizations */
+.gh-header.is-classic {
+  padding-block: 80px !important;
+}
+.gh-footer-signup {
+  display: none !important;
+}
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+body {
+    --background-color: #262626;
+    --color-primary-text: #FAFAFA;
+    --color-secondary-text: #e6e6e6;
+    --color-darker-gray: #FAFAFA;
+    --ghost-accent-color: #9adefe;
+}
+  .gh-navigation-logo img,
+  .gh-footer-logo img {
+    filter: invert(1);
+  }
+  .gh-button,
+  .kg-button-card a,
+  .spacebar-subscribe-btn {
+    background-color: #014565;
+  }
+  .kg-signup-card {
+    background-color: #333333 !important;
+  }
+  .gh-form {
+    background-color: var(--color-primary-text) !important;
+  }
+  .kg-signup-card-heading,
+  .kg-signup-card-subheading,
+  .kg-signup-card-disclaimer {
+    color: var(--color-primary-text) !important;
+  }
+  .kg-signup-card-button {
+    color: var(--background-color) !important;
+  }
 }
