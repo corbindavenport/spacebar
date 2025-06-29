@@ -8,6 +8,10 @@ Disallow: /members/api/comments/counts/
 Disallow: /r/
 Disallow: /webmentions/receive/
 
+# Allow Buffer
+User-agent: Bufferbot
+Allow: /
+
 # Block all the AI crap
 # Source: https://github.com/ai-robots-txt/ai.robots.txt
 
