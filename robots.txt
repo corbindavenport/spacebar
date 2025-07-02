@@ -8,9 +8,9 @@ Disallow: /members/api/comments/counts/
 Disallow: /r/
 Disallow: /webmentions/receive/
 
-# Allow Buffer
-User-agent: Bufferbot
-Allow: /
+# Block hidden pages
+User-agent: *
+Disallow: /nexus-tools-exit/
 
 # Block AI agents and robots, except in search engine use cases
 # Source: https://github.com/ai-robots-txt/ai.robots.txt
