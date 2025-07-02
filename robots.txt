@@ -14,7 +14,6 @@ Allow: /
 
 # Block AI agents and robots, except in search engine use cases
 # Source: https://github.com/ai-robots-txt/ai.robots.txt
-# OAI-SearchBot, Claude-SearchBot, and PerplexityBot are allowed
 
 User-agent: AI2Bot
 User-agent: Ai2Bot-Dolma
@@ -30,6 +29,7 @@ User-agent: Brightbot 1.0
 User-agent: Bytespider
 User-agent: CCBot
 User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
 User-agent: Claude-User
 User-agent: Claude-Web
 User-agent: ClaudeBot
@@ -70,6 +70,7 @@ User-agent: MistralAI-User/1.0
 User-agent: MyCentralAIScraperBot
 User-agent: netEstate Imprint Crawler
 User-agent: NovaAct
+User-agent: OAI-SearchBot
 User-agent: omgili
 User-agent: omgilibot
 User-agent: Operator
@@ -77,6 +78,7 @@ User-agent: PanguBot
 User-agent: Panscient
 User-agent: panscient.com
 User-agent: Perplexity-User
+User-agent: PerplexityBot
 User-agent: PetalBot
 User-agent: PhindBot
 User-agent: Poseidon Research Crawler
